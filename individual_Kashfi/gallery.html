@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GALLERY</title>
+	<style type="text/css">
+			img { 
+				display: block; 
+				margin-left: auto; 
+				margin-right: auto;
+				}
+
+				*{
+ 				margin: 0;
+ 				padding: 0;
+				box-sizing: border-box;
+ 				list-style: none;
+				text-decoration: none;
+				}
+
+				nav{
+ 				background: #808000;
+  				height: 80px;
+ 				width: 100%;
+				}
+
+				label.logo{
+  				color: black;
+  				font-size: 33px;
+  				line-height: 80px;
+  				padding: 0 140px;
+  				font-weight: 600;
+  				font-family: Times New Roman;
+				}
+
+				nav ul{
+  				float: right;
+  				margin-right: 60px;
+				}
+
+				nav ul li{
+  				display: inline-block;
+  				line-height: 80px;
+  				margin: 0 2px;
+				}
+
+				nav ul li a{
+  				color: black;
+  				font-weight: 500;
+  				font-size: 20px;
+  				padding: 7px 13px;
+  				border-radius: 3px;
+  				/* text-transform: uppercase; */
+  				font-family: 'Poppins', sans-serif;
+				}
+
+				a.active,a:hover{
+  				background: #1b9bff;
+  				transition: .5s;
+				}
+
+				.checkbtn{
+  				font-size: 30px;
+  				color: white;
+  				float: right;
+  				line-height: 80px;
+  				margin-right: 40px;
+  				cursor: pointer;
+  				display: none;
+				}
+
+				#check{
+  				display: none;
+				}
+
+				@media (max-width: 952px){
+  				label.logo{
+    			font-size: 27px;
+    			padding-left: 25px;
+  				}
+
+  				nav ul li a{
+    			font-size: 16px;
+  				}
+
+				}
+				@media (max-width: 858px){
+  				.checkbtn{
+    			display: block;
+    			margin-right: 40px;
+ 				}
+
+  				ul{
+    			position: fixed;
+    			width: 100%;
+    			height: 100vh;
+    			background: #2c3e50;
+    			top: 80px;
+    			left: -100%;
+    			text-align: center;
+    			transition: all .5s;
+  				}
+
+  				nav ul li{
+    			display: block;
+    			margin: 50px 0;
+    			line-height: 30px;
+  				}
+
+  				nav ul li a{
+    			font-size: 20px;
+  				}
+
+  				a:hover,a.active{
+    			background: none;
+    			color: #bab86c;
+  				}
+
+  				#check:checked ~ ul{
+    			left: 0;
+  				}
+
+
+				section{
+  				background: url(bg1.jpg) no-repeat;
+  				background-size: cover;
+  				height: calc(100vh - 80px);
+				}
+
+        th {
+          font-size: 2em;
+          background-color: #f9ddff;
+        }
+
+
+	</style>
+</head>
+
+<header>
+	<h1 class="logo">Hello. Welcome to my Personal Gallery.</h1>
+
+	<nav>
+		<ul>
+			<li><a href="home.html">HOME</a></li>
+      <li><a href="gallery.html">GALLERY</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+		</ul>
+	</nav>
+</header>
+
+<body>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<body background="Images/background.jpg">
+
+    <center><table>
+      <tr>
+        <th colspan="3">
+          GALLERY
+        </th>
+      </tr>
+
+      <tr>
+        <td><img src="Images/IMG_20200115_220604.jpg" height="300" width="200"></td> 
+        <td><img src="Images/IMG_20200309_180131.jpg" height="300" width="200"></td>
+        <td><img src="Images/IMG_3730.jpg" height="300" width="200"></td> 
+      </tr>
+
+      <tr>
+        <td><img src="Images/IMG_2037 (1).jpg" height="300" width="200"></td>
+        <td><img src="Images/IMG_20191003_105829 (2).jpg" height="300" width="200"></td>
+        <td><img src="Images/IMG_20200204_162524.jpg" height="300" width="200"></td>
+      </tr>
+
+      <tr>
+        <td><img src="Images/IMG_20191222_204612.jpg" height="300" width="200"></td>
+        <td><img src="Images/IMG_20200304_214717_135.jpg" height="300" width="200"></td>
+        <td><img src="Images/_MG_7420.jpg" height="300" width="200"></td>
+      </tr>
+    </center></table>
+
+</body>
+</html>
